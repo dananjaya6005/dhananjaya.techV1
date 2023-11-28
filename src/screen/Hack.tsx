@@ -1,8 +1,10 @@
 import notJustDevHack2023 from '../image/notJusrDev2023Hack.jpg';
 
+
 export default function Hack() {
   return (
     <>
+  
       <div
         className="w-full min-h-screen h-full bg-gradient-to-b from-white via-purple-100 to-pink-100 
    dark:bg-gradient-to-b dark:from-[#0F172A] dark:via-[#0f212a] dark:to-[#121a38]
@@ -28,12 +30,12 @@ export default function Hack() {
           <div className="flex flex-col align-right ml-4 m-2">
             <p className="text-sm  text-gray-800  dark:text-gray-200 ">
               Project Link :{" "}
-              <a href="https://github.com/dananjaya6005/Rocket_Rush">
-                https://github.com/dananjaya6005/Rocket_Rush
+              <a className='text-indigo-300' href="https://github.com/dananjaya6005/Rocket_Rush">
+                Click Here
               </a>
             </p>
           </div>
-          <img src={notJustDevHack2023} className="w-[50%] rounded-lg my-3 " />
+          <img src={notJustDevHack2023} className="w-[50%] rounded-lg my-3 max-[500px]:w-[75%] " />
         </div>
         
       </div>

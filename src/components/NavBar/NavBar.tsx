@@ -2,13 +2,13 @@ import { useEffect, useState } from "react";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon,  XMarkIcon,PhoneIcon } from "@heroicons/react/24/outline";
 import { useNavigate } from "react-router-dom";
-
+import logo from '../../image/Capture.png';
 
 const navigation = [
   { name: "Projects", href: "/", current: true },
   { name: "Hack", href: "/hack", current: false },
-  { name: "Blogs", href: "/hack", current: false },
-  { name: "GitHub", href: "/hack", current: false },
+  { name: "Blogs", href: "/blog", current: false },
+  { name: "GitHub", href: "/github", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -17,6 +17,7 @@ function classNames(...classes: string[]) {
 
 export default function Example() {
   const navigate = useNavigate();
+  const [showModal, setShowModal] = useState(false);
 
   const [theme, setTheme] = useState("dark");
 
@@ -34,6 +35,10 @@ export default function Example() {
     } else {
       setTheme("dark");
     }
+  }
+
+  function openModal() {
+    setShowModal(!showModal);
   }
 
 
@@ -60,8 +65,8 @@ export default function Example() {
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
+                    className="h-10 w-auto"
+                    src={logo}
                     alt="Your Company"
                   />
                 </div>
@@ -111,6 +116,7 @@ export default function Example() {
 
                 <button
                   type="button"
+                  onClick={openModal}
                   className="m-4 relative rounded-full bg-white p-1 text-gray-600 hover:text-black dark:bg-gray-800 dark:text-gray-400 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-black dark:focus:ring-white focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-800"
                 >
                   <span className="absolute -inset-1.5" />

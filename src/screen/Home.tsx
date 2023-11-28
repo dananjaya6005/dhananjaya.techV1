@@ -16,13 +16,19 @@ const tags = [
 ];
 
 export default function Home() {
+
   const divRef = useRef<HTMLDivElement>(null);
   const handleclick = () => {
     divRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+
+ 
+
   return (
     <>
+ 
+    
       <div
         className="w-full h-full bg-gradient-to-b from-white via-purple-100 to-pink-100 
        dark:bg-gradient-to-b dark:from-[#0F172A] dark:via-[#0f212a] dark:to-[#121a38]
@@ -72,7 +78,7 @@ export default function Home() {
             <button
               onClick={handleclick}
               type="button"
-              className="max-[800px]:px-3 text-gray-900 mr-10 bg-white  hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
+              className="max-[800px]:px-3  text-gray-900 mr-10 bg-white  hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
             >
               🐯 Get Started
             </button>
@@ -80,7 +86,7 @@ export default function Home() {
             <button
               onClick={handleclick}
               type="button"
-              className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
+              className="text-gray-900  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
             >
               🚀 View Resume 
             </button>
@@ -116,6 +122,7 @@ export default function Home() {
 
                 <button
                   type="button"
+                  onClick={() => window.open(post.link)}
                   className="py-2 px-5  text-sm font-medium text-gray-900 ml-4 my-2
                   focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100
                    hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700
