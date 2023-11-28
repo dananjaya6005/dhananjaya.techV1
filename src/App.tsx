@@ -10,7 +10,7 @@ function App() {
   return (
     <>
     
-      <BrowserRouter basename="/dhananjaya.techV1" >
+      <BrowserRouter basename="/">
         <NavBar/>
         <Routes>
           <Route path="/" element={<Home />} />
