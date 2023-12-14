@@ -4,7 +4,6 @@ import post from "../../src/post.json";
 
 
 
-
 const tags = [
   { name: "React Native" },
   { name: "React" },
@@ -16,7 +15,7 @@ const tags = [
 ];
 
 export default function Home() {
-
+ 
   const divRef = useRef<HTMLDivElement>(null);
   const handleclick = () => {
     divRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -76,6 +75,7 @@ export default function Home() {
           <div className=" my-4 items-center flex justify-center ">
               
             <button
+              
               onClick={handleclick}
               type="button"
               className="max-[800px]:px-3  text-gray-900 mr-10 bg-white  hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
@@ -84,7 +84,7 @@ export default function Home() {
             </button>
 
             <button
-              onClick={handleclick}
+              onClick={()=>{window.open("https://raw.githubusercontent.com/dananjaya6005/dhananjaya.techV1/main/src/postImg/Resume%20Dhananjaya%20Chathuranga.pdf")}}
               type="button"
               className="text-gray-900  bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 me-2 mb-2"
             >

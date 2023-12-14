@@ -23,12 +23,17 @@ dark:bg-[#0F172A] "
               Sorry, we can't find that page. You'll find lots to explore on the
               home page.{" "}
             </p>
-            <a
+
+
+            <span className="text-rose-400 ">But if u interest to see my git profile  <a
+             href="https://github.com/dananjaya6005"
+             className=" cursor-pointer inline-flex text-blue-500 bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4"
+           >
+             Click here
+           </a> </span>
              
-              className="inline-flex text-white bg-primary-600 hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:focus:ring-primary-900 my-4"
-            >
-              Back to Homepage
-            </a>
+          
+            
           </div>
         </div>
       </section>

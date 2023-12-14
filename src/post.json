@@ -1,6 +1,16 @@
 
 [
   {
+    "title": "Bloging web | MERN stack",
+    "tools": "React + Node + Express + MongoDB",
+    "link":"https://github.com/dananjaya6005/Task1_CODSOFT.git",
+    "img" : "https://raw.githubusercontent.com/dananjaya6005/dhananjaya.techV1/main/src/postImg/BlogAPPPoster.png",
+
+    "description":"This project is a dynamic blogging platform built using the MERN stack. It offers an intuitive environment for blog writers and readers. Users can explore various blogs and search by title, enhancing the user experience. Users need to sign in using a valid email address and one-factor authentication to publish blogs. Once logged in, they can manage their content with options to update, view, and delete their blogs. This control encourages users to share their thoughts freely.The platform is fully responsive for mobile and desktop devices."
+    
+  },    
+  
+  {
     "title": "Rocket Rush | Betting App",
     "tools": "React Native | Expo",
     "link":"https://www.youtube.com/watch?v=McLAFSQYvzo",
