@@ -10,6 +10,8 @@ const tags = [
   { name: "MongoDB" },
   { name: "Graphql" },
   { name: "Tailwind CSS" },
+  { name : 'Next js'},
+  { name : 'Remix js '}
 ];
 
 export default function Home() {
