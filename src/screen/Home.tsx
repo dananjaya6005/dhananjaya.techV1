@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import myimage from "../../src/image/Untitled-1.jpg";
+import myimage from "../../src/image/newdpweb.jpg";
 import post from "../../src/post.json";
 
 const tags = [
@@ -30,7 +30,7 @@ export default function Home() {
       >
         <div className="flex flex-col items-center justify-center  ">
           <div className="flex flex-col items-center justify-center m-1 my-10 ">
-            <img src={myimage} className="w-60 h-60 rounded-full" />
+            <img src={myimage} className="w-60 h-auto rounded-full" />
             <h1
               className="text-4xl font-bold text-gray-600 dark:text-gray-400 m-1 text-center
             2xl:text-5xl
